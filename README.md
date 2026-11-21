@@ -47,5 +47,12 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [SavingAndLoading](Programmer/Core/SavingAndLoading.md)
   * [ComponentCache](Programmer/Core/ComponentCache.md)
 * **Combat**
+  * [Weapon Manager vs WeaponizedModule](Programmer/Combat/WeaponManagerVsWeaponizedModule.md)
+  * [Weapons - Virtual Transform](Programmer/Combat/WeaponsVirtualTransform.md)
+  * [Weapons - Aiming](Programmer/Combat/WeaponsAiming.md)
+  * [Weapons - Gates](Programmer/Combat/WeaponsGates.md)
+  * [Weapons - Execution](Programmer/Combat/WeaponsExecution.md)
+  * [Combat Sequencer](Programmer/Combat/CombatSequencer.md)
+  * [Example Template](Programmer/Combat/ExampleTemplate.md)
 * **Modular Character**
 * **Items**
