@@ -28,6 +28,7 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Passives](Designer/ModularCharacter/Passives.md)
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
+  * [Summary](Designer/Items/Summary.md)
   * [Crafting](Designer/Items/Crafting.md)
   * [Drop Tables](Designer/Items/DropTables.md)
   * [Merchant](Designer/Items/Merchant.md)
