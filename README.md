@@ -39,6 +39,7 @@ Official documentation for the PixelDot2D modular Unity framework.
 *Architecture internals, lifecycle contracts, extension points.*
 
 * **Core**
+  * [Summary](Programmer/Core/Summary.md)
   * [Animation](Programmer/Core/Animation.md)
   * [Extensions](Programmer/Core/Extensions.md)
   * [Input](Programmer/Core/Input.md)
@@ -51,6 +52,7 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [SavingAndLoading](Programmer/Core/SavingAndLoading.md)
   * [ComponentCache](Programmer/Core/ComponentCache.md)
 * **Combat**
+  * [Summary](Programmer/Combat/Summary.md)
   * [Weapon Manager vs WeaponizedModule](Programmer/Combat/WeaponManagerVsWeaponizedModule.md)
   * [Weapons - Virtual Transform](Programmer/Combat/WeaponsVirtualTransform.md)
   * [Weapons - Aiming](Programmer/Combat/WeaponsAiming.md)
