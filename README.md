@@ -33,6 +33,9 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Crafting](Designer/Items/Crafting.md)
   * [Drop Tables](Designer/Items/DropTables.md)
   * [Merchant](Designer/Items/Merchant.md)
+* **Shared**
+  * [Summary](Designer/Shared/Summary.md)
+  * [Templates](Designer/Shared/Templates.md)
 
 ---
 
