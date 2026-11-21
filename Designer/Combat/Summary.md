@@ -33,5 +33,5 @@ Each execution type requires a slightly different asset and scene setup. Refer t
 
 - [Hitscans](Hitscans.md)
 - [Projectiles](Projectiles.md)
-- [Hitboxes](Hitboxes.md)
+- [Hitboxes](Hitbox.md)
 
