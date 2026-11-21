@@ -90,6 +90,11 @@ public class CustomCollisionDetector : MonoBehaviour, IVirtualTransform
     {
         _isQuitting = true;
     }
+    //=========================================================================
+     private void FixedUpdate()
+     {
+        _collisionManager.FixedUpdate();
+     }
     #endregion
 
     #region IVirtualTransform
