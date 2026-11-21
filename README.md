@@ -21,6 +21,9 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Hitbox](Designer/Combat/Hitbox.md)
   * [Template Combat Entity and Prefabs](Designer/Combat/TemplateCombatEntityAndPrefabs.md)
 * **Modular Character**
+  * [Character Blueprint](Designer/ModularCharacter/CharacterBlueprint.md)
+  * [Passives](Designer/ModularCharacter/Passives.md)
+  * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
 
 ---
