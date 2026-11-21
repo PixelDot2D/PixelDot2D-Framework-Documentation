@@ -75,7 +75,6 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Passives - Executions](Programmer/ModularCharacter/PassivesExecutions.md)
   * [Passives - Exits](Programmer/ModularCharacter/PassivesExits.md)
   * [Passives - Compatibility List](Programmer/ModularCharacter/PassivesCompatibilityList.md)
-  * [Expanding Scripted State Modules](Programmer/ModularCharacter/ExpandingScriptedStateModules.md)
   * [StateGates](Programmer/ModularCharacter/StateGates.md)
   * [Interactables](Programmer/ModularCharacter/Interactables.md)
 * **Items**
