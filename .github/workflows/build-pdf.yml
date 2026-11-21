@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Pandoc and WeasyPrint
         run: |
@@ -67,7 +67,8 @@ jobs:
           pandoc combined.md -o PixelDot2D_Documentation.pdf --pdf-engine=weasyprint --toc --toc-depth=2
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: PixelDot2D_Documentation
+          name: PixelDot2D_Documentation.pdf
           path: PixelDot2D_Documentation.pdf
+          archive: false
