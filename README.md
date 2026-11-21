@@ -35,6 +35,17 @@ Official documentation for the PixelDot2D modular Unity framework.
 *Architecture internals, lifecycle contracts, extension points.*
 
 * **Core**
+  * [Animation](Programmer/Core/Animation.md)
+  * [Extensions](Programmer/Core/Extensions.md)
+  * [Input](Programmer/Core/Input.md)
+  * [Object_Pool](Programmer/Core/Object_Pool.md)
+  * [Collision](Programmer/Core/Collision.md)
+  * [LineOfSight](Programmer/Core/LineOfSight.md)
+  * [Sensors](Programmer/Core/Sensors.md)
+  * [Profiling](Programmer/Core/Profiling.md)
+  * [RB2DMover](Programmer/Core/RB2DMover.md)
+  * [SavingAndLoading](Programmer/Core/SavingAndLoading.md)
+  * [ComponentCache](Programmer/Core/ComponentCache.md)
 * **Combat**
 * **Modular Character**
 * **Items**
