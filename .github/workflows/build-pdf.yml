@@ -75,7 +75,8 @@ jobs:
           #TOC > ul { padding-left: 0; }
           #TOC a { text-decoration: none; color: #0969da; }
           EOF
-          pandoc combined.md -o PixelDot2D_Documentation.pdf --pdf-engine=weasyprint --css=pdf-style.css --toc --toc-depth=2 --metadata title="PixelDot2D Framework Documentation"
+          pandoc combined.md -f gfm -o PixelDot2D_Documentation.pdf --pdf-engine=weasyprint --css=pdf-style.css --toc --toc-depth=2 --metadata title="PixelDot2D Framework Documentation"
+
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v7
