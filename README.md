@@ -79,3 +79,11 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [StateGates](Programmer/ModularCharacter/StateGates.md)
   * [Interactables](Programmer/ModularCharacter/Interactables.md)
 * **Items**
+  * [Summary](Programmer/Items/Summary.md)
+  * [Crafting](Programmer/Items/Crafting.md)
+  * [Drop Tables](Programmer/Items/DropTables.md)
+  * [Inventory](Programmer/Items/Inventory.md)
+  * [Item Components](Programmer/Items/ItemComponents.md)
+  * [Merchant](Programmer/Items/Merchant.md)
+  * [Interfaces](Programmer/Items/Interfaces.md)
+
