@@ -116,3 +116,10 @@ Select `Projectile_Blueprint` and expand **Projectile Object Data**:
   - **Continuous Rotation:** Spins the sprite continuously.
   - **Look At Velocity:** Rotates the sprite to face its current movement vector.
   - **Velocity Sprite Flip:** Flips the sprite on X, Y, or both axes based on movement direction.
+
+## Decoupled Damage & Standalone Usage
+
+Combat is completely decoupled from the Modular Character system, allowing you to use **Core + Combat** on its own and plug in your own gameplay logic.
+
+Values like **Flat Damage** and **Stat Scaling** are passed straight through inside the combat data struct without pre-calculating final damage for you. For a practical example of how a standalone entity receives and processes this struct, see [Template Combat Entity and Prefabs](TemplateCombatEntityAndPrefabs.md).
+
