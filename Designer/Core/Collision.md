@@ -38,7 +38,7 @@ To use collision in a custom MonoBehaviour, implement **`IVirtualTransform`**, s
 
 ```csharp
 using UnityEngine;
-using PixelDot2D.Core;
+using PixelDot2D.Core.Extensions;
 using PixelDot2D.Core.Physics;
 using PixelDot2D.Core.Interfaces;
 
