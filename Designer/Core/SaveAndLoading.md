@@ -14,6 +14,17 @@ The **Core Saving & Loading** system is built to handle any game's save data wit
 
 <img width="925" height="682" alt="image" src="https://github.com/user-attachments/assets/e41594e2-17ca-4400-bdad-9d9da9803b9a" />
 
+
+> **Pre-Build Validation Tip:** In the **SaveAndLoadManager** Inspector, click **Clean I Saveable and Loadable Objects Collection** after assigning objects—and especially before making a build. This editor tool validates your list, automatically removes duplicate entries, and pings a warning message of any invalid objects in the Hierarchy so you can fix them early. Because this validation check is stripped from standalone builds for maximum runtime speed, running it beforehand prevents missing or duplicate save references.
+
+### Inspector Version Parameters
+
+In the **SaveAndLoadManager** Inspector, you can configure three version numbers that are saved into the file header and passed into every `ISaveableAndLoadable` lifecycle method:
+
+- **Major Patch Version:** Increment this when shipping a major feature update or expansion (e.g., `1.x.x -> 2.x.x`). Adding major features often introduces new save data that will also require bumping **Load Version**.
+- **Load Version:** Tracks changes to how save files are **loaded and migrated**. Because saving always rewrites the entire file from scratch in the latest format, `Save` never needs legacy branches—only `Load` needs to check `loadVersion` to read older files and migrate them forward. Increment this whenever you add new fields or change how existing save data is read.
+- **Minor Patch Version:** Increment this for small bug fixes, hotfixes, or balance tweaks that do not affect save data structure (e.g., `1.0.1 -> 1.0.2`).
+
 ## Registering a Save Key
 
 Every saveable system requires a unique identifier in **`Enum_ISaveableAndLoadableKey.cs`**, located at `PixelDot2D -> Core -> Scripts -> SaveAndLoading -> Enums`.
