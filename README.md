@@ -22,7 +22,7 @@ Official documentation for the PixelDot2D modular Unity framework.
 ---
 
 ## Programmer Documentation
-*Architecture internals, lifecycle contracts, and `SO_` / `Data_` / `State_` extension templates.*
+*Architecture internals, lifecycle contracts, extension points.*
 
 * **Core**
 * **Modular Character**
