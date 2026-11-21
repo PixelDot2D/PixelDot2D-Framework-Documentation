@@ -1,7 +1,9 @@
 # Core Systems (Designer)
 
-Setup and wiring guides for core framework utilities.
+Setup, Inspector configuration, and minimal copy-paste wiring for core framework utilities.
 
-* [Collision](Collision/)
-* [Sensors](Sensors/)
+* [Animation](Animation/)
 * [Input](Input/)
+* [Physics](Physics/)
+* [RB2DMover](RB2DMover/)
+* [SaveAndLoading](SaveAndLoading/)
