@@ -7,6 +7,8 @@ Weapons in PixelDot2D are not hardcoded—they are assembled like LEGO bricks fr
 
 Below is a reference for each built-in module. To browse or create any of these assets, press **Ctrl + E** or right-click in the Project window and select **PixelDot2D -> Open Advanced Creation Hub**, then navigate to **Combat -> Weapons** (`Aiming Types`, `Execution Gate Types`, `Execution Types`, and `Virtual Transform Types`).
 
+---
+
 ## Aiming Types
 
 Aiming modules modify or offset the Virtual Transform's base rotation without overwriting its underlying reference angle.
@@ -67,6 +69,8 @@ Directly mirrors the Virtual Transform's current rotation:
 
 - **Angle Offset:** Additional degree offset added on top of the Virtual Transform's rotation.
 
+---
+
 ## Execution Gate Types
 
 Execution Gates act as the firing condition and resource controller, determining when a weapon is allowed to trigger.
@@ -108,6 +112,8 @@ Enforces a standard timer delay between executions:
 
 - **Cooldown:** Minimum delay in seconds between attacks.
 - **Allow Cooldown During Execution:** When enabled, the cooldown timer starts ticking immediately when execution begins rather than waiting for multi-shot bursts or hitbox durations to finish.
+
+---
 
 ## Virtual Transform Types
 
@@ -206,6 +212,8 @@ Places the Virtual Transform at a fixed offset and angle with no dynamic trackin
 
 - **Positional Offset:** Fixed offset relative to the source entity.
 - **Angle:** Fixed rotation angle in degrees.
+
+---
 
 ## Execution Types
 
