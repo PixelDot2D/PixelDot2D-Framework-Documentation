@@ -1,0 +1,73 @@
+name: Build Documentation PDF
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'
+      - '.github/workflows/build-pdf.yml'
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and WeasyPrint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint
+
+      - name: Combine Markdown and Build PDF
+        run: |
+          python3 -c '
+          import glob, os
+
+          ordered_sections = [
+              "README.md",
+              "Designer/Core/Summary.md",
+              "Designer/Core/*.md",
+              "Designer/Combat/Summary.md",
+              "Designer/Combat/*.md",
+              "Designer/ModularCharacter/Summary.md",
+              "Designer/ModularCharacter/*.md",
+              "Designer/Items/Summary.md",
+              "Designer/Items/*.md",
+              "Designer/Shared/Summary.md",
+              "Designer/Shared/*.md",
+              "Programmer/Core/Summary.md",
+              "Programmer/Core/*.md",
+              "Programmer/Combat/Summary.md",
+              "Programmer/Combat/*.md",
+              "Programmer/ModularCharacter/Summary.md",
+              "Programmer/ModularCharacter/*.md",
+              "Programmer/Items/Summary.md",
+              "Programmer/Items/*.md",
+              "Programmer/Shared/Summary.md",
+              "Programmer/Shared/*.md",
+          ]
+
+          seen = set()
+          files = []
+          for pattern in ordered_sections:
+              for path in sorted(glob.glob(pattern)):
+                  if path not in seen and os.path.isfile(path):
+                      seen.add(path)
+                      files.append(path)
+
+          with open("combined.md", "w", encoding="utf-8") as out:
+              for idx, f in enumerate(files):
+                  if idx > 0:
+                      out.write("\n\n<div style=\"page-break-before: always;\"></div>\n\n")
+                  with open(f, "r", encoding="utf-8") as inp:
+                      out.write(inp.read())
+          '
+          pandoc combined.md -o PixelDot2D_Documentation.pdf --pdf-engine=weasyprint --toc --toc-depth=2
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PixelDot2D_Documentation
+          path: PixelDot2D_Documentation.pdf
