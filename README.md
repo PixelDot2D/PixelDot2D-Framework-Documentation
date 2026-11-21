@@ -18,6 +18,7 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [SaveAndLoading](Designer/Core/SaveAndLoading.md)
 * **Combat**
   * [Summary](Designer/Combat/Summary.md)
+  * [Weapon Modules](Designer/Combat/WeaponModules.md)
   * [Hitscans](Designer/Combat/Hitscans.md)
   * [Projectiles](Designer/Combat/Projectiles.md)
   * [Hitbox](Designer/Combat/Hitbox.md)
