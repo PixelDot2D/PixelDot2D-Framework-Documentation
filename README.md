@@ -1,9 +1,6 @@
 # PixelDot2D-Framework-Documentation
 Table of contents for the PixelDot2D Framework Documentation
 
-
-# PixelDot2D Framework Documentation
-
 Welcome to the official documentation for the PixelDot2D modular Unity framework.
 
 ## Choose Your Track
