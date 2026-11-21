@@ -7,7 +7,9 @@ Welcome to the official documentation for the PixelDot2D modular Unity framework
 
 ### Designer Documentation
 *Setup, Inspector configuration, and minimal code, includes copy-paste wiring where applicable.*
-[Collision](Designer/Core/Collision/README.md)
+
+[Core](Designer/Core/README.md)
+- [Collision](Designer/Core/Collision/README.md)
 
 
 ### Programmer Documentation
