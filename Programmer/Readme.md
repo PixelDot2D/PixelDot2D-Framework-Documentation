@@ -1,6 +1,6 @@
 # Core Systems (Programmer)
 
-Architecture internals, lifecycle contracts, and `SO_` / `Data_` / `State_` extension templates for core framework utilities.
+Architecture internals, lifecycle contracts, and extension templates for core framework utilities.
 
 * [Animation](Animation/)
 * [Extensions](Extensions/)
