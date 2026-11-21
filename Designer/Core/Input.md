@@ -112,7 +112,7 @@ public class KeybindRebindMenu : MonoBehaviour
         _keybindManager.SetDefaultBinds();
 
         string formattedBinds = _keybindManager.GetKeybindAsStringWithKeybindName(" / ", ", ", _allKeybinds);
-        Debug.Log(\$"Reset keybinds! {formattedBinds}");
+        Debug.Log($"Reset keybinds! {formattedBinds}");
     }
     #endregion
 
@@ -168,7 +168,7 @@ public class KeybindListener : MonoBehaviour
         if (_keybindManager.ChangeKeybind(_keyToChange))
         {
             string updatedBind = _keybindManager.GetKeybindAsStringWithKeybindName(" / ", ", ", _keyToChange);
-            Debug.Log(\$"Successfully changed key! {updatedBind}");
+            Debug.Log($"Successfully changed key! {updatedBind}");
 
             gameObject.SetActive(false);
         }
