@@ -35,7 +35,6 @@ To use a Sensor in a custom MonoBehaviour, implement **`IVirtualTransform`**, cr
 
 ```csharp
 using UnityEngine;
-using PixelDot2D.Core;
 using PixelDot2D.Core.Physics;
 using PixelDot2D.Core.Interfaces;
 using PixelDot2D.Core.Extensions;
