@@ -15,8 +15,12 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Sensor](Designer/Core/Sensor.md)
   * [RB2DMover](Designer/Core/RB2DMover.md)
   * [SaveAndLoading](Designer/Core/SaveAndLoading.md)
-* **Modular Character**
 * **Combat**
+  * [Hitscans](Designer/Combat/Hitscans.md)
+  * [Projectiles](Designer/Combat/Projectiles.md)
+  * [Hitbox](Designer/Combat/Hitbox.md)
+  * [Template Combat Entity and Prefabs](Designer/Combat/TemplateCombatEntityAndPrefabs.md)
+* **Modular Character**
 * **Items**
 
 ---
@@ -25,6 +29,6 @@ Official documentation for the PixelDot2D modular Unity framework.
 *Architecture internals, lifecycle contracts, extension points.*
 
 * **Core**
-* **Modular Character**
 * **Combat**
+* **Modular Character**
 * **Items**
