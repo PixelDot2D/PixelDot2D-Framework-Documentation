@@ -29,6 +29,7 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
   * [Summary](Designer/Items/Summary.md)
+  * [Items Creation](Designer/Items/ItemsCreation.md)
   * [Crafting](Designer/Items/Crafting.md)
   * [Drop Tables](Designer/Items/DropTables.md)
   * [Merchant](Designer/Items/Merchant.md)
