@@ -89,4 +89,6 @@ Official documentation for the PixelDot2D modular Unity framework.
   * [Item Components](Programmer/Items/ItemComponents.md)
   * [Merchant](Programmer/Items/Merchant.md)
   * [Interfaces](Programmer/Items/Interfaces.md)
+* **Shared**
+  * [Summary](Programmer/Shared/Summary.md)
 
