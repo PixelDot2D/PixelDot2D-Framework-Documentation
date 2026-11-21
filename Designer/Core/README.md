@@ -1,1 +1,1 @@
-- [Collision](Designer/Core/Collision/README.md)
+[Collision](Designer/Core/Collision/README.md)
