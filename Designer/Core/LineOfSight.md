@@ -34,6 +34,7 @@ To run Line of Sight checks in a custom MonoBehaviour, implement **`IVirtualTran
 using UnityEngine;
 using PixelDot2D.Core.Extensions;
 using PixelDot2D.Core.Interfaces;
+using PixelDot2D.Core.Physics;
 
 public class CustomLineOfSightChecker : MonoBehaviour, IVirtualTransform
 {
