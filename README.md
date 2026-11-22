@@ -2,6 +2,12 @@
 
 Official documentation for the PixelDot2D modular Unity framework.
 
+> [!IMPORTANT]
+> **Documentation Overhaul (Work in Progress)**
+> 
+> These docs are currently undergoing a major rewrite. While programming is still required to extend the framework with custom modules, PixelDot2D has evolved to empower designers to build complete 2D games directly in the Unity Editor—assembling characters, unique behaviors, weapons, and items out of modular, "Lego-like" pieces without writing code.
+
+
 ## Required Setup & Critical Rules
 
 Before configuring any modules, ensure your project follows these two foundational contracts (also located in `REQUIRED_SETUP.txt` inside the package root):
