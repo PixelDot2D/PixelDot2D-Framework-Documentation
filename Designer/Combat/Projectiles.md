@@ -87,10 +87,14 @@ Select the Projectile Execution asset to configure damage and multi-shot paramet
 
 <img width="860" height="650" alt="image" src="https://github.com/user-attachments/assets/b57359d0-c5fa-47ed-92be-5ae7c0622776" />
 
+### Damage & Scaling
 - **Flat Damage:** Base damage dealt per hit.
 - **Stat Scaling:** Entity stat used to scale damage.
 - **Scaling Amount:** Multiplier applied to the scaled stat (`1` = 100%, `0.5` = 50%).
 - **School Flags:** Elemental or damage type flags (such as `Fire`).
+- 
+- *(Note: Raw damage and scaling values are passed into `DamageData` without pre-calculating final damage. See [Template Combat Entity and Prefabs](TemplateCombatEntityAndPrefabs.md) for how `IWeaponizable` and `IDamageable` resolve hits.)*
+- 
 - **Projectile Blueprint:** Already pre-wired by the macro.
 - **Number Of Shots:** Total projectiles fired per trigger.
   - *Note:* When using a **Formation State** on the blueprint, Unity's Inspector cannot recalculate the shot count immediately upon selection. Nudge the field (type or delete a digit) to trigger `OnValidate` and auto-populate the exact formation point count.
