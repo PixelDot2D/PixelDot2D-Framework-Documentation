@@ -103,7 +103,8 @@ namespace PixelDot2D.Combat
         //=========================================================================
         private void OnDestroy()
         {
-            _movement.Destroy();
+            _movement?.Destroy();
+            _animationPlayer?.Destroy();
         }
         //=========================================================================
         private void Awake()
