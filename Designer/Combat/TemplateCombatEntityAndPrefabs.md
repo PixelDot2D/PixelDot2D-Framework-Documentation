@@ -134,7 +134,9 @@ namespace PixelDot2D.Combat
         public DamageData IWeaponizable_GetDamage(DamageData damageData)
         {
             damageData.m_SchoolFlags = Enum_SchoolFlags.Ice;
-            damageData.m_Damage = 1.0f;
+            // Base damage and school flags are already pre-filled from your Weapon ScriptableObject.
+            // Modify or add (+=) to them here to apply character stats, buffs, or overrides.
+            damageData.m_Damage += 1.0f;
 
             return damageData;
         }
