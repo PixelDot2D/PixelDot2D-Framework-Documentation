@@ -61,7 +61,6 @@ Filters define how the character perceives the world around it:
 All internal systems, passives, and state modules rely on these filters automatically—for example, a Frost Aura queries the **Enemies** filter to find valid targets, while line-of-sight checks inside passives or scripted state modules raycast against the **Obstacles** filter.
 
 ---
-
 ## 4. States
 
 The **States** list holds all State ScriptableObjects (both Coded States and Scripted States) available to the character.
@@ -71,6 +70,24 @@ The **States** list holds all State ScriptableObjects (both Coded States and Scr
 You can add any number of states (from 1 upward), subject to two strict rules:
 1. **Idle State Required:** An **Idle** state must always be present in the list.
 2. **Unique State Categories:** No two states in the same blueprint may share the same State Category (`Enum_ModularCharacterStateCategory`).
+
+> **Best Practice — Always Reserve State Slots Using Buffer States:**
+> Because blueprints can hot-swap states or inject new states at runtime, **every Character Blueprint should include a slot for every State Category your project uses**—even if a specific character cannot perform those actions yet.
+>
+> Internally, the controller rejects any transition to a State Category that does not exist in the current blueprint (and falls back to `Idle`). For example, if a Patrol AI blueprint only contains `Idle` and `Movement`, and later hot-swaps or injects an `Ascend` state, transitions into `Ascend` will fail unless an `Ascend` slot already exists in the blueprint.
+>
+> To reserve unused state slots safely, use the included **Buffer State**:
+> 1. Press **Ctrl + E** or right-click in the Project window and select **PixelDot2D -> Open Advanced Creation Hub**.
+> 2. Navigate to **ModularCharacter -> States -> Buffer**.
+>
+> <img width="1025" height="771" alt="image" src="https://github.com/user-attachments/assets/4ba0a3a8-85bd-405a-8b27-a9614a11edba" />
+>
+> A Buffer State is an empty placeholder asset with only two settings:
+>
+> <img width="1090" height="472" alt="image" src="https://github.com/user-attachments/assets/2b984fb1-a771-43ea-9887-2d2a5c1bc9ef" />
+>
+> - **Category:** The State Category slot to reserve (e.g., `Ascend`, `Descend`, or `Glide`).
+> - **Can Enter:** When unchecked (`false`), the controller cleanly blocks entry into that slot—making it ideal both for reserving AI hot-swap slots and for locking player abilities (such as `Glide`) until unlocked at runtime.
 
 
 ---
