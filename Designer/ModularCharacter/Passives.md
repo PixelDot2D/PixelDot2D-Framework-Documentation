@@ -64,6 +64,7 @@ Use this quick-reference matrix when pairing **Passive Executions** with **Passi
 | **IFrame** | **IFrame Gate** only | Requires the dedicated **IFrame Gate**. |
 | **Knock Back** | **On Damage Reaction Gate** only | Must set Reaction Type to **`On Damage Taken`**. |
 | **Mirror Stat Change** | **On Stat Change Reaction Gate** only | Must set On Stat Change Type to **`On Post Change`**. Mirrors the final post-pipeline value without re-triggering the stat pipeline (preventing infinite recursion). |
+| **Modify Stat Current** | All Gates except **On Stat Change Reaction Gate** | Compatible with every Gate except **On Stat Change Reaction Gate**. |
 | **On Damage Reaction Gain Stat** | **On Damage Reaction Gate** only | Works with all Reaction Types. |
 | **On Damage Reaction Reprisal** | **On Damage Reaction Gate** only | Works with all Reaction Types. |
 | **On Damage Taken Multiplier** | **On Damage Reaction Gate** only | Must set Reaction Type to **`On_Pre_Damage_Taken`**. |
@@ -74,5 +75,6 @@ Use this quick-reference matrix when pairing **Passive Executions** with **Passi
 | **Stat Stasis** | **On Stat Change Reaction Gate** only | Must set On Stat Change Type to **`On Pre Change`**. |
 | **Stat Step Damage Scaling** | **On Damage Reaction Gate** only | Must set Reaction Type to **`On Pre Damage Taken`**. |
 | **Timed State Blueprint Revert** | **No Gate** only | Must use the **No Gate** asset. |
+
 
 
