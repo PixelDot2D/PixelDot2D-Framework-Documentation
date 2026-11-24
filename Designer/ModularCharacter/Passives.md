@@ -40,6 +40,27 @@ While you can create individual passive pieces manually via **ModularCharacter -
 
 This macro generates a dedicated folder containing empty **Gate**, **Execution**, and **Exit** subfolders alongside a **Passive Blueprint** ready for you to populate in the Editor.
 
+---
+
+## Anatomy of a Passive Blueprint
+
+Once you create a Passive Blueprint (either via **Build Passive Matrix** or manually under **ModularCharacter -> Passives**), inspect the asset to configure its UI metadata, immunity flags, and lifecycle modules:
+
+<img width="888" height="636" alt="image" src="https://github.com/user-attachments/assets/e207eba0-5aa0-4ebf-b1ba-94abfe0f0dbe" />
+
+- **Icon:** Sprite reference exposed for UI systems (such as buff/debuff bars or tooltips).
+- **Passive Name:** Display name pulled by UI systems when rendering the passive.
+- **Aura Flags:** Classifies the passive's aura behavior (e.g., `Buff`, `Debuff`, `Permanent Buff`, `Permanent Debuff`).
+  - *Note:* Passives flagged as **Permanent** are protected by the internal Passive Manager and will not be stripped by standard removal/cleanse calls unless explicitly forced.
+- **School Flags:** Elemental or magical school tags (e.g., `Fire`, `Frost`, `Shadow`) checked by Character Blueprint **School Immunities** and passive immunity filters.
+- **Mechanic Flags:** Gameplay mechanic tags (e.g., `Slow`, `Stun`, `DoT`, `HoT`) checked by Character Blueprint **Mechanic Immunities** and passive immunity filters.
+- **Gate:** The **Passive Gate** ScriptableObject that controls when this passive triggers.
+- **Exit:** The **Passive Exit** ScriptableObject that determines when this passive expires and removes itself.
+
+> **Why Is There No Execution Slot on the Passive Blueprint?**
+> The **Passive Execution** asset is slotted directly inside the **Passive Gate** rather than on the Passive Blueprint itself—because the Gate owns and triggers the Execution whenever its conditions are met.
+
+
 ### Applying Passives
 - **Starting Passives:** Drag any Passive asset directly into a Character Blueprint's **Starting Passives** array.
 - **Runtime Application:** Apply passives dynamically through other passives (e.g., `Apply Passive`), abilities, or C# code. There is no limit to how many passives a character can hold simultaneously.
