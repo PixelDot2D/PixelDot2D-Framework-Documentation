@@ -48,6 +48,7 @@ Before configuring any modules, ensure your project follows these two foundation
   * [Scripted Gates](Designer/ModularCharacter/Gates.md)
   * [Passives](Designer/ModularCharacter/Passives.md)
   * [Passive Gates](Designer/ModularCharacter/PassiveGates.md)
+  * [Passive Executions](Designer/ModularCharacter/PassiveExecutions.md)
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
   * [Summary](Designer/Items/Summary.md)
