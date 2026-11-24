@@ -45,6 +45,7 @@ Before configuring any modules, ensure your project follows these two foundation
   * [Scripted Main Actions](Designer/ModularCharacter/ScriptedMainActions.md)
   * [Scripted Sub Actions](Designer/ModularCharacter/ScriptedSubActions.md)
   * [Scripted Exit Actions](Designer/ModularCharacter/ScriptedExitActions.md)
+  * [Gates](Designer/ModularCharacter/Gates.md)
   * [Passives](Designer/ModularCharacter/Passives.md)
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
