@@ -13,7 +13,7 @@ The framework ships with **35+ pre-built Passives** under `PixelDot2D/ModularCha
 - **Healing Aura:** Periodically heals characters inside a collision shape using the given filters.
 - **I-Frames & Knockback:** Core combat reaction behaviors implemented purely as starting passives rather than hardcoded controller logic.
 - **Scaredy Cat:** Grants a temporary speed buff whenever the character takes Shadow damage.
-- **Painful Dash:** Deals `1` damage as Fire, Water, and Lightning when triggered.
+- **Painful Dash:** Deals `1` damage as Fire, Water, and Lightning Affinities when triggered.
 
 ---
 
