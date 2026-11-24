@@ -43,6 +43,7 @@ Before configuring any modules, ensure your project follows these two foundation
   * [Character Blueprint](Designer/ModularCharacter/CharacterBlueprint.md)
   * [States](Designer/ModularCharacter/States.md)
   * [Scripted Main Actions](Designer/ModularCharacter/ScriptedMainActions.md)
+  * [Scripted Sub Actions](Designer/ModularCharacter/ScriptedSubActions.md)
   * [Passives](Designer/ModularCharacter/Passives.md)
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
