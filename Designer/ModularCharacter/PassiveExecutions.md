@@ -43,19 +43,6 @@ Modifies a character stat's current value (acting as a direct heal, resource gai
 
 ---
 
-### `[Shared]` Execute Weapon
-
-<img width="771" height="372" alt="image" src="https://github.com/user-attachments/assets/24b89ded-4147-485f-bcba-f76c20038054" />
-
-Triggers a Combat weapon execution from a Passive, bridging `ModularCharacter` and `Combat` while keeping both systems decoupled.
-
-- **Weapon:** The `MultiWeapon` asset fired when this execution is triggered.
-- **Weapon Name:** The string identifier used by programmers when retrieving the weapon's description or display name.
-  
-> **Requirement:** Must be used on a **Shared** character template—slotting this onto a standard `ModularCharacterController` will log an error. See the **Shared** documentation for setup details.
-
----
-
 ### Grant Stat Immunity
 
 <img width="728" height="446" alt="image" src="https://github.com/user-attachments/assets/d75bbc58-4d74-4740-9a0f-39a827efa12d" />
