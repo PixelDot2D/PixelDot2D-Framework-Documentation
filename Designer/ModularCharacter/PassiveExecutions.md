@@ -283,7 +283,8 @@ An autonomous timer Execution (ignores Gates) that monitors a hot-swapped state 
 
 ## Shared
 
-Shared components require the **Shared Character** setup, which bridges decoupled systems—such as combat, inventory, damageables, weapons, and currency—into a unified character without coupling their underlying assemblies. In order to use any of the items below, you **must** use the Shared system.
+> [!IMPORTANT]
+> Shared components require the **Shared Character** setup, which bridges decoupled systems—such as combat, inventory, damageables, weapons, and currency—into a unified character without coupling their underlying assemblies. In order to use any of the items below, you **must** use the Shared system.
 
 ### Execute Weapon
 
