@@ -283,3 +283,29 @@ An autonomous timer Execution (ignores Gates) that monitors a hot-swapped state 
 - **States That Pause Timer:** State Categories that pause the revert countdown for a single transition when entered directly from **State to Watch** (e.g., pausing a jump-combo revert window while mid-air in `Ascend` or `Descend` so the countdown only runs once the character lands).
 - **States That Force Reset:** State Categories that immediately cancel the timer and revert the state back to the Master Blueprint on entry (for example, listing a `Stunned` state so getting hit immediately resets an active attack combo chain).
 
+
+
+
+
+
+
+
+
+
+---
+
+## Shared
+
+Shared components require the **Shared Character** setup, which bridges decoupled systems—such as combat, inventory, damageables, weapons, and currency—into a unified character without coupling their underlying assemblies. In order to use any of the items below, you **must** use the Shared system.
+
+### Execute Weapon
+
+<img width="772" height="390" alt="image" src="https://github.com/user-attachments/assets/6b901e53-2060-4a6d-87cf-a9fffc881cd8" />
+
+Executes a Multi-Weapon when the passive triggers, allowing designers to stack as few or as many weapons as needed.
+
+#### Variables
+* **Weapon:** The Multi-Weapon executed when this passive triggers.
+* **Weapon Name:** The display name injected when programmers retrieve the programmatically assembled description for this passive.
+
+
