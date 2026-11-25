@@ -37,8 +37,8 @@ Before configuring any modules, ensure your project follows these two foundation
   * [Weapon Modules Aiming](Designer/Combat/WeaponModulesAiming.md)
   * [Weapon Modules Gates](Designer/Combat/WeaponModulesGates.md)
   * [Weapon Modules Executions - Projectiles](Designer/Combat/Projectiles.md)
-  * [Weapon Modules Executions - Hitscans](Designer/Combat/Hitscans.md)
   * [Weapon Modules Executions - Hitbox](Designer/Combat/Hitbox.md)
+  * [Weapon Modules Executions - Hitscans](Designer/Combat/Hitscans.md)
   * [Template Combat Entity and Prefabs](Designer/Combat/TemplateCombatEntityAndPrefabs.md)
 * **Modular Character**
   * [Summary](Designer/ModularCharacter/Summary.md)
