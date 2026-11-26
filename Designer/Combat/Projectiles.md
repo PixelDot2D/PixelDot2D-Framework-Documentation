@@ -58,6 +58,7 @@ To add optional **Sleep** or **Formation** states, open the Creation Hub and nav
 
 <img width="862" height="691" alt="image" src="https://github.com/user-attachments/assets/7722d284-1144-4280-a6a2-b19b7a565884" />
 
+- **Origin Point:** Determines the anchor point where projectiles initially spawn before moving into formation (defaults to **Fire Point**, which uses the Virtual Transform's firing position). You can also select any of the **9 camera anchor points** (Top, Middle, and Bottom across Left, Center, and Right). For example, setting **Duration** to `0` and **Origin Point** to **Camera Top Center** (with formation points offset above center) makes the pattern appear as if projectiles are descending from off-screen.
 - **Duration:** Time allowed for projectiles to move into their formation positions.
 - **Sort Points:** Determines point ordering based on the selected sort mode (only noticeable when **Take Index Into Account** is enabled).
 - **Wait For All Batch Formation:** Holds all shots in formation until every projectile in the batch reaches its point before advancing to the next state.
