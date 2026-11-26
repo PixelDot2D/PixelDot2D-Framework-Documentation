@@ -5,7 +5,20 @@ Official documentation for the PixelDot2D modular Unity framework.
 > [!IMPORTANT]
 > **Documentation Overhaul (Work in Progress)**
 > 
-> These docs are currently undergoing a major rewrite. While programming is still required to extend the framework with custom modules, PixelDot2D has evolved to empower designers to build complete 2D games directly in the Unity Editor—assembling characters, unique behaviors, weapons, and items out of modular, "Lego-like" pieces without writing code.
+> These docs are currently undergoing a major rewrite and **do not reflect the current live version on the Unity Asset Store**. 
+> 
+> The upcoming update restructures the framework internally and introduces breaking changes with two main goals:
+> - **Designer-First Workflows:** Build complete 2D characters, AI, weapons, items, and reactive behaviors directly in the Unity Editor by assembling modular, "Lego-like" ScriptableObjects—without writing code.
+> - **Decoupled Factory & Flyweight Extensions:** Core extension points have been refactored from assembly-bound registries into Factory and Flyweight patterns, allowing programmers to create custom modules inside their own `.asmdef` boundaries while keeping full visibility of their game code without modifying framework files.
+
+## Required Setup & Critical Rules
+
+Before configuring any modules, ensure your project meets these foundational requirements (also located in `REQUIRED_SETUP.txt` inside the package root):
+
+- **Unity Version (`Unity 6.6+` Required):** This framework requires **Unity 6.6 or newer** and is not compatible with earlier Unity releases.
+- **Layer & Enum Sync (`Enum_EditorLayers.cs`):** Enum integer values must match your Unity Project Settings layer indices exactly (e.g., if `Player` is Layer `8`, `Enum_EditorLayers.Player = 8`) and remain sequential (`0, 1, 2, 3...`) with no gaps so bit-shifting and array indexing stay deterministic.
+- **Right-Facing Vector Orientation (`+X` Origin):** All sprites, sprite sheets, and animations must be authored facing **Right** (`0°` along the positive X-axis) with `SpriteRenderer.flipX = false` by default. Directional flipping is handled purely as a visual inversion so underlying physics and angle math remain undisturbed.
+
 
 
 ## Required Setup & Critical Rules
@@ -14,6 +27,7 @@ Before configuring any modules, ensure your project follows these two foundation
 
 - **Layer & Enum Sync (`Enum_EditorLayers.cs`):** Enum integer values must match your Unity Project Settings layer indices exactly (e.g., if `Player` is Layer `8`, `Enum_EditorLayers.Player = 8`) and remain sequential (`0, 1, 2, 3...`) with no gaps so bit-shifting and array indexing stay deterministic.
 - **Right-Facing Vector Orientation (`+X` Origin):** All sprites, sprite sheets, and animations must be authored facing **Right** (`0°` along the positive X-axis) with `SpriteRenderer.flipX = false` by default. Directional flipping is handled purely as a visual inversion so underlying physics and angle math remain undisturbed.
+- Unity 6.6 + is a must
 
 ---
 
