@@ -19,16 +19,6 @@ Before configuring any modules, ensure your project meets these foundational req
 - **Layer & Enum Sync (`Enum_EditorLayers.cs`):** Enum integer values must match your Unity Project Settings layer indices exactly (e.g., if `Player` is Layer `8`, `Enum_EditorLayers.Player = 8`) and remain sequential (`0, 1, 2, 3...`) with no gaps so bit-shifting and array indexing stay deterministic.
 - **Right-Facing Vector Orientation (`+X` Origin):** All sprites, sprite sheets, and animations must be authored facing **Right** (`0°` along the positive X-axis) with `SpriteRenderer.flipX = false` by default. Directional flipping is handled purely as a visual inversion so underlying physics and angle math remain undisturbed.
 
-
-
-## Required Setup & Critical Rules
-
-Before configuring any modules, ensure your project follows these two foundational contracts (also located in `REQUIRED_SETUP.txt` inside the package root):
-
-- **Layer & Enum Sync (`Enum_EditorLayers.cs`):** Enum integer values must match your Unity Project Settings layer indices exactly (e.g., if `Player` is Layer `8`, `Enum_EditorLayers.Player = 8`) and remain sequential (`0, 1, 2, 3...`) with no gaps so bit-shifting and array indexing stay deterministic.
-- **Right-Facing Vector Orientation (`+X` Origin):** All sprites, sprite sheets, and animations must be authored facing **Right** (`0°` along the positive X-axis) with `SpriteRenderer.flipX = false` by default. Directional flipping is handled purely as a visual inversion so underlying physics and angle math remain undisturbed.
-- Unity 6.6 + is a must
-
 ---
 
 ## Designer Documentation
