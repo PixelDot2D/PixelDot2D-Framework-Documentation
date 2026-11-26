@@ -46,7 +46,7 @@ public class CustomSpriteAnimator : MonoBehaviour
     private AnimationPlayer2D _animator;
     #endregion
 
-    #region Unity Lifecycle
+    #region MonoBehaviour
     //=========================================================================
     private void Awake()
     {
