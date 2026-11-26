@@ -54,3 +54,27 @@ Enforces a standard timer delay between executions:
 
 ---
 
+---
+
+## Shared
+
+> [!IMPORTANT]
+> Shared components require the **Shared Character** setup, which bridges decoupled systems—such as combat, inventory, damageables, weapons, and currency—into a unified character without coupling their underlying assemblies. In order to use any of the items below, you **must** use the Shared system.
+
+### Item Requirement
+
+<img width="1112" height="873" alt="image" src="https://github.com/user-attachments/assets/93868d24-5e37-450a-9399-839a7a6342ab" />
+
+An Execution Gate that requires and consumes items from the character's inventory before permitting weapon execution (e.g., consuming arrows for a bow or reagents for a spell).
+
+#### Variables
+* **Requirement UI Description:** The text returned for UI tooltips and weapon descriptions (e.g., `"Requires 1 Arrow"` or `"Requires 1 Ammo"`). Because this gate supports an array of valid items ordered by priority, descriptions are authored manually rather than auto-generated—giving designers full control over how multi-item requirements are worded.
+* **Item Requirement Type:** Controls how the **Item Requirements** array is evaluated and consumed:
+  * **FirstConsumed:** Checks the array from top to bottom (index `0` first) and consumes the first entry whose stack requirement is satisfied, immediately allowing execution. Place your highest-priority items at the top of the list (e.g., End-Game Arrows -> Mid-Game Arrows -> Beginner Arrows).
+  * **Must_Have_All:** Checks that every entry in the array is present in the inventory before consuming all of them at once; rejects execution if any single item requirement is missing (e.g., an arcane staff requiring both a Mana Crystal and an Arcane Rune).
+* **Item Requirements:** An ordered list of required item entries evaluated from top to bottom. Each entry contains:
+  * **Item:** The Item Blueprint ScriptableObject required for execution.
+  * **Stack Count:** The number of items consumed per execution. Internally clamped between `1` and the item's **Max Stack Count**.
+* **Delay Between Successful Executes:** The cooldown duration (in seconds) enforced after successfully validating and consuming the required item(s).
+
+
