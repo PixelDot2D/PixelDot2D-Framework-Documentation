@@ -75,7 +75,7 @@ public class CustomSpriteAnimator : MonoBehaviour
     }
     #endregion
 
-    #region Private Methods
+    #region nonMonoBehaviour
     //=========================================================================
     private void PlayFootstepSound()
     {
