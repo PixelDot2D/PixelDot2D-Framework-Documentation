@@ -34,6 +34,7 @@ Before configuring any modules, ensure your project meets these foundational req
   * [Line Of Sight](Designer/Core/LineOfSight.md)
   * [Sensor](Designer/Core/Sensor.md)
   * [RB2DMover](Designer/Core/RB2DMover.md)
+  * [RB2D Movements](Designer/Core/RB2DMovements.md)
   * [SaveAndLoading](Designer/Core/SaveAndLoading.md)
 * **Combat**
   * [Summary](Designer/Combat/Summary.md)
