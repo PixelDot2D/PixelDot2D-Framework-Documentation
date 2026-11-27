@@ -71,7 +71,8 @@ Once you create a Passive Blueprint (either via **Build Passive Matrix** or manu
 
 Use this quick-reference matrix when pairing **Passive Executions** with **Passive Gates**. (For detailed parameter breakdowns of each module, see the dedicated Passive Gates, Executions, and Exits pages.)
 
-> **Note on `No Gate`:** `No Gate` does **not** mean leaving the Gate slot `null`—there is an explicit **No Gate** asset in the Creation Hub that keeps the passive continuously active without a conditional trigger.
+> **How No Gate Works:** **No Gate** does not mean leaving the Gate slot `null`—there is an explicit **No Gate** asset in the Creation Hub. However, **No Gate** is a passive placeholder that never invokes trigger callbacks, meaning standard event-driven Executions will never fire if paired with it. When the matrix below lists **"All Gates"**, it refers to standard triggering Gates. Executions listed as **"No Gate only"** run on their own internal lifecycle (such as tick timers or immediate application/revert) and ignore Gate trigger events completely.
+
 
 | Passive Execution | Compatible Passive Gate(s) | Notes & Constraints |
 | :--- | :--- | :--- |
