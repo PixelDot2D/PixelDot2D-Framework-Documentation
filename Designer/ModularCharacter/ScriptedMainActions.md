@@ -63,10 +63,12 @@ These Shared Main Actions mirror the standard **Direct Scripted State (Non-Input
 
 #### Variants & Parameters
 
+### Direct Scripted State (Non-Input)
 - **Combat Direct Scripted State (Non-Input):** Exposes only the **Combat Sequence** reference, executing the sequence directly without reading directional input.
 
 <img width="812" height="327" alt="image" src="https://github.com/user-attachments/assets/b2270d86-9284-4898-8933-f711c03dcd45" />
 
+### Scripted Input State
 - **Combat Scripted Input State:** Wraps the **Combat Sequence** with the same directional input polling and velocity scaling controls as the standard **Scripted Input State** (**Max Vector**, **Move Speed Multiplier**, **Forced Input**, and **Input Polling Type**).
 
 <img width="812" height="626" alt="image" src="https://github.com/user-attachments/assets/707caaa8-3689-4667-9dcd-808bea016d40" />
