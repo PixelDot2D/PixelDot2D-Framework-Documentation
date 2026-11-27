@@ -55,6 +55,7 @@ Before configuring any modules, ensure your project meets these foundational req
   * [Passives](Designer/ModularCharacter/Passives.md)
   * [Passive Gates](Designer/ModularCharacter/PassiveGates.md)
   * [Passive Executions](Designer/ModularCharacter/PassiveExecutions.md)
+  * [Passive Exits](Designer/ModularCharacter/PassiveExits.md)
   * [Prefabs and Templates](Designer/ModularCharacter/PrefabsAndTemplates.md)
 * **Items**
   * [Summary](Designer/Items/Summary.md)
